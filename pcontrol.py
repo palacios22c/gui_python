@@ -3,25 +3,31 @@
 
 '''
 Creación de un panel de control utilizando el módulo por defecto, Tkinter
+
+En este ejemplo se tiene 4 productos, y un número variable de elementos de cada uno de los productos.
+Las opciones implementadas son:
+- Mostrar la cantidad de elementos que hay para un producto (elegido por el usuario)
+- Aumentar (añadir) el número de elementos de uno de los productos.
+	(El usuario elige la cantidad y el producto correspondiente)
 '''
 
 # Módulos
 from tkinter import *
 from tkinter import messagebox
 
-#Método para mostrar en una nueva ventada la cantidad que se tiene de un producto cualquiera
 def elementos(cantidad, producto):
+	'''Método que muestra en una ventana la cantidad disponible para un producto cualquiera'''
 	messagebox.showinfo(producto,"Disponemos de %d elementos de %s"%(cantidad,producto))
 
 def masElementos():
-	'''Método mostrar una nueva (new) ventana y añadir elementos a un producto seleccionado
+	'''Método para mostrar una nueva (new) ventana y añadir elementos a un producto seleccionado
 
 	- Se crea un listado de los productos
 	- Se añade una caja para poder introducir un número
 	- Finalmente el botón para sumar la cantidad introducida por el usuario a la cantidad que se tiene en memoria
 	'''
 	new = Toplevel() # Creamos una nueva ventana
-	new.geometry("200x100+30+30") # Tamaño y posición de la ventana
+	new.geometry("200x100+50+50") # Tamaño y posición de la ventana
 	variable = StringVar(new)
 	variable.set("Seleccione un producto") # Valor por defecto
 	w = OptionMenu(new, variable, "Producto 1", "Producto 2", "Producto 3", "Producto 4")
