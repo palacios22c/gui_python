@@ -11,15 +11,9 @@ Las opciones implementadas son:
 	(El usuario elige la cantidad y el producto correspondiente)
 '''
 
-import sys
-
-# Módulos importados según la versión de Python del sistema
-if sys.version_info >= (3,0):	# Python 3 o superior
-	from tkinter import *
-	from tkinter import messagebox
-else:				# Python versión inferior a 3
-	from Tkinter import *
-	import tkMessageBox
+# Módulos
+from tkinter import *
+from tkinter import messagebox
 
 def elementos(cantidad, producto):
 	'''Método que muestra en una ventana la cantidad disponible para un producto cualquiera'''
