@@ -1,4 +1,4 @@
-﻿# pcontrol_kivy.py
+﻿# gamePPT_kivy.py
 # -*- coding: utf-8 -*-
 
 '''
