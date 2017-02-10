@@ -54,7 +54,7 @@ class Tab2(wx.Panel):
 	def __init__(self, parent):
 		super(Tab2, self).__init__(parent)
 		currencies = ['Euros', 'Dollars', 'Pounds']
-		self.rbox = wx.RadioBox(self, label = 'RadioBox', pos = (10,10), choices = currencies,
+		self.rbox = wx.RadioBox(self, label = 'Monedas', pos = (10,10), choices = currencies,
 			majorDimension = 1, style = wx.RA_SPECIFY_ROWS)
 		self.Bind(wx.EVT_RADIOBOX,self.onRadioBox)
 
