@@ -3,7 +3,7 @@
 # -*- coding: utf-8 -*-
 
 '''
-A basic panel with information about foods and price
+A basic panel with information about foods and prices
 
 There are some foods and drinks. They are distributed in 5 categories:
 1. Starters (2 products)
@@ -41,7 +41,7 @@ class Start(QtGui.QMainWindow):
         
     def initUI(self):      
 
-        self.mainFrame = Options()                      # Create a Options class
+        self.mainFrame = Options()                      # Create an Options class
         self.setCentralWidget(self.mainFrame)           # This is our main Frame
 
         # Close action
@@ -73,7 +73,7 @@ class Options(QtGui.QWidget):
         opts.addItem("Desserts")
         opts.addItem("Drinks")
 
-        # Change buttons (name and enabled) every time user change category
+        # Change buttons (name and enabled) every time user changes category
         opts.activated[str].connect(self.changeButtons)
 
         # Create buttons
@@ -87,14 +87,14 @@ class Options(QtGui.QWidget):
         self.secondButton.clicked.connect(self.onActivated)
         self.thirdButton.clicked.connect(self.onActivated)
 
-        # A space to show information (Name of product and price)
+        # A text box to show information (Name of product and price)
         self.infoOption = QtGui.QTextEdit('')           # Initial value is empty
         self.infoOption.setStyleSheet("background: transparent")
         self.infoOption.setReadOnly(True)               # User cannot change it manually
         self.infoOption.setAlignment(QtCore.Qt.AlignCenter)
 
-        # Create a layout (Grid layout in this example) and put the combobox, buttons and
-        # Text box
+        # Create a layout (Grid layout in this example) and put the elements (combobox,
+        # buttons and text box)
         mainLayout = QtGui.QGridLayout()
         mainLayout.addWidget(opts,0,0)
         mainLayout.addWidget(self.firstButton,2,0)
@@ -107,7 +107,7 @@ class Options(QtGui.QWidget):
     def onActivated(self):
         '''Show a message
         
-        Product + price
+        Product + its price
         '''
 
         product = self.sender().text()
@@ -117,7 +117,7 @@ class Options(QtGui.QWidget):
     def changeButtons(self, text):
         '''Change button's name and enable/disable them'''
 
-        # Text box cleaned
+        # Text box cleared
         self.infoOption.setText('')
 
         # Enable all buttons
@@ -125,7 +125,7 @@ class Options(QtGui.QWidget):
         self.secondButton.setEnabled(True)
         self.thirdButton.setEnabled(True)
 
-        # According every case show a text in button and disable it
+        # According to every food category show a text in button and disable it
         if text == 'Starter':
             self.firstButton.setText('Crispy Chicken Wings')
             self.secondButton.setText('Gazpacho')
@@ -135,7 +135,7 @@ class Options(QtGui.QWidget):
             self.firstButton.setText('Fish and Chips')
             self.secondButton.setText('Spaghetti')
             self.thirdButton.setText('Spring rolls')
-            # self.thirdButton.setEnabled(True)         # It similar to line before if-conditional
+            # self.thirdButton.setEnabled(True)         # It is similar to line before if-conditional
         elif text == 'Main Course':
             self.firstButton.setText('Salmon')
             self.secondButton.setText('Vegetarian risotto')
@@ -145,14 +145,14 @@ class Options(QtGui.QWidget):
             self.firstButton.setText('Fruit')
             self.secondButton.setText('Ice cream')
             self.thirdButton.setText('Picarones')
-            # self.thirdButton.setEnabled(True)         # It similar to line before if-conditional
+            # self.thirdButton.setEnabled(True)         # It is similar to line before if-conditional
         elif text == 'Drinks':
             self.firstButton.setText('Beer')
             self.secondButton.setText('Coke')
             self.thirdButton.setText('Water')
-            # self.thirdButton.setEnabled(True)         # It similar to line before if-conditional
+            # self.thirdButton.setEnabled(True)         # It is similar to line before if-conditional
 
-        # This is a default case (in this example is not possible to reach)
+        # This is a default case (in this example is not possible to reach it)
         else:
             # All buttons are empty
             self.firstButton.setText('')
@@ -166,7 +166,7 @@ class Options(QtGui.QWidget):
     def checkPrice(self, text):
         '''Check the global variable prices
         
-        Return a numeric value (according the variable prices). In this example is a integer
+        Return a numeric value (according to the variable prices). In this example is an integer
         '''
         
         global prices
