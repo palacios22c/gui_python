@@ -70,7 +70,7 @@ class Options(QtGui.QWidget):
         opts.addItem("Starter")
         opts.addItem(u"Entrée") # Use a unicode codification (accent is problematic)
         opts.addItem("Main Course")
-        opts.addItem("Desserts")
+        opts.addItem("Dessert")
         opts.addItem("Drinks")
 
         # Change buttons (name and enabled) every time user changes category
