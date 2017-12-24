@@ -8,6 +8,7 @@
 <li>options.py: A basic panel to check price of foods and drinks. (Using PyQt4 module)</li>
 <li>options2.py: Same panel as options.py but using PyQT5. (Using PyQt5 module)</li>
 <li>prices.py: A panel to show prices for three items and calculate a total price. (Using pyFLTK library)</li>
+<li>figures.py: A simple canvas test. (Using Tkinter module)</li>
 </ul>
 
 <h1>gui_python</h1>
@@ -20,4 +21,5 @@
 <li>options.py: Un panel de control básico para comprobar los precios. (Creado usando PyQt4)</li>
 <li>options2.py: El mismo panel que options.py pero con PyQT5. (Usado el módulo PyQt5)</li>
 <li>prices.py: Panel básico que permite saber el precio para tres artículos y calcular el precio total. (Creado usando la librería pyFLTK)</li>
+<li>figures.py: Una prueba simple del canvas. (Usando módulo Tkinter)</li>
 </ul>
