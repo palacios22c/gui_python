@@ -32,8 +32,8 @@ jugadas = ['Piedra', 'Papel', 'Tijera']
 class gamePPT(App): # Juego Piedra, Papel o Tijeras
 
     def game(self, *args):
-    	'''Método que realiza el juego, devolviendo un mensaje de salida'''
-        rival = randint(0,2)						# Se elige al azar un valor entero entre 0 y 2
+        '''Método que realiza el juego, devolviendo un mensaje de salida'''
+        rival = randint(0,2)                        # Se elige al azar un valor entero entre 0 y 2
         resultado = args[0]*args[0] - rival*rival 	# (diferencia de cuadrados)
 
         if resultado == 0:							# Tie
@@ -44,9 +44,9 @@ class gamePPT(App): # Juego Piedra, Papel o Tijeras
             print('Has perdido. Has elegido ' + jugadas[args[0]] + ' y el rival ' + jugadas[rival])
 
     def build(self):
-    	'''Construcción de los botones y las acciones asociadas'''
+        '''Construcción de los botones y las acciones asociadas'''
         layout = BoxLayout(padding=10, orientation="vertical")
-    	
+
     	# Creation of buttons
         btn1 = Button(text="Piedra", background_color=rojo)
         btn2 = Button(text="Papel", background_color=verde)
