@@ -84,7 +84,7 @@ def add_elements (cantidad, producto, window, caja):
 				messagebox.showwarning(parent=window, title="Valor desconocido", message="La cantidad introducida no es un valor entero")
 			else:
 				caja.delete(0,'end')
-		if producto == "Producto 4":	# Caso: Producto 2
+		if producto == "Producto 4":	# Caso: Producto 4
 			global p4
 			try:
 				p4 += int(cantidad)
