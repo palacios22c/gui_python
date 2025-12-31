@@ -13,6 +13,7 @@
 <li>figures.py: A simple canvas test. (Using Tkinter module)</li>
 <li>figures_wx.py: A canvas test using wxPython. (Using wxPython module)</li>
 <li>figures_pygame.py: Another canvas test but using pygame. (Using pygame module)</li>
+<li>converter.py: A basic converter between measurements (length, mass, time, temperature). (Using PySide6 module)</li>
 </ul>
 
 <h1>gui_python</h1>
@@ -30,4 +31,5 @@
 <li>figures.py: Una prueba simple del canvas. (Usando módulo Tkinter)</li>
 <li>figures_wx.py: Una prueba del canvas con wxPython. (Usando módulo wxPython)</li>
 <li>figures_pygame.py: Otro canvas pero usando pygame. (Se usa el módulo pygame)</li>
+<li>converter.py: A convertidor básico entre medidas (distancia, masa, tiempo, temperatura). (Se usa el módulo PySide6)</li>
 </ul>
