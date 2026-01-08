@@ -4,7 +4,7 @@
 
 '''
 This game is inspired by Simon.
-Bilingual version (ENG and ESP)
+Multilingual version (ENG and ESP)
 
 The game first shows a sequence of colors
 The player try to reproduce in the same order
@@ -49,6 +49,18 @@ COLOR_NAMES = {
         "red": "RED",
         "yellow": "YELLOW",
         "blue": "BLUE",
+    },
+    "it": {
+        "green": "VERDE",
+        "red": "ROSSO",
+        "yellow": "GIALLO",
+        "blue": "BLU",
+    },
+    "pt": {
+        "green": "VERDE",
+        "red": "VERMELHO",
+        "yellow": "AMARELO",
+        "blue": "AZUL",
     }
 }
 
@@ -75,6 +87,28 @@ TEXT = {
         "game_over": "Game Over",
         "correct_color": "The correct color was:",
         "language": "Language",
+    },
+    "it": {
+        "start": "Inizia",
+        "try_again": "Riprova",
+        "watch": "Guarda la sequenza…",
+        "your_turn": "Il tuo turno: ripeti la sequenza",
+        "good": "Ben fatto!",
+        "score": "Punteggio",
+        "game_over": "Fine del gioco",
+        "correct_color": "Il colore corretto era:",
+        "language": "Lingua",
+    },
+    "pt": {
+    "start": "Iniciar",
+    "try_again": "Tentar novamente",
+    "watch": "Observe a sequência…",
+    "your_turn": "Sua vez: repita a sequência",
+    "good": "Muito bem!",
+    "score": "Pontuação",
+    "game_over": "Fim de jogo",
+    "correct_color": "A cor correta era:",
+    "language": "Idioma",
     }
 }
 
@@ -113,9 +147,21 @@ class MemoryGame:
             variable=self.lang_var, value="en",
             command=self.apply_language
         )
+        self.radio_it = tk.Radiobutton(
+            lang_frame, text="Italiano",
+            variable=self.lang_var, value="it",
+            command=self.change_language
+        )
+        self.radio_pt = tk.Radiobutton(
+            lang_frame, text="Português",
+            variable=self.lang_var, value="pt",
+            command=self.change_language
+        )
 
         self.radio_es.pack(side="left")
         self.radio_en.pack(side="left")
+        self.radio_it.pack(side="left")
+        self.radio_pt.pack(side="left")
 
         # Buttons
         self.buttons = {}
