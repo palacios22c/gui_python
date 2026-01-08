@@ -4,7 +4,7 @@
 
 '''
 This game is inspired by Simon.
-Multilingual version (ENG and ESP)
+Multilingual version
 
 The game first shows a sequence of colors
 The player try to reproduce in the same order
@@ -100,15 +100,15 @@ TEXT = {
         "language": "Lingua",
     },
     "pt": {
-    "start": "Iniciar",
-    "try_again": "Tentar novamente",
-    "watch": "Observe a sequência…",
-    "your_turn": "Sua vez: repita a sequência",
-    "good": "Muito bem!",
-    "score": "Pontuação",
-    "game_over": "Fim de jogo",
-    "correct_color": "A cor correta era:",
-    "language": "Idioma",
+        "start": "Iniciar",
+        "try_again": "Tentar novamente",
+        "watch": "Observe a sequência…",
+        "your_turn": "Sua vez: repita a sequência",
+        "good": "Muito bem!",
+        "score": "Pontuação",
+        "game_over": "Fim de jogo",
+        "correct_color": "A cor correta era:",
+        "language": "Idioma",
     }
 }
 
