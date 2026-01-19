@@ -17,6 +17,7 @@
 <li>figures_pygame.py: Another canvas test but using pygame. (Using pygame module)</li>
 <li>converter.py: A basic converter between measurements (length, mass, time, temperature). (Using PySide6 module)</li>
 <li>converter_wx.py: A basic converter, similar to converter.py. Including area measurements. (Using wxPython module)</li>
+<li>task_manager.py: A web-based task manager for creating, editing and organizing tasks. (Using NiceGUI library)</li>
 </ul>
 
 <h1>gui_python</h1>
@@ -38,4 +39,5 @@
 <li>figures_pygame.py: Otro canvas pero usando pygame. (Se usa el módulo pygame)</li>
 <li>converter.py: Un conversor básico entre medidas (distancia, masa, tiempo, temperatura). (Se usa el módulo PySide6)</li>
 <li>converter_wx.py: Conversor básico similar a converter.py. Se incluye el área. (Se usa el módulo wxPython)</li>
+<li>task_manager.py: Gestor de tareas web que permite crear, editar y organizar tareas. (Se usa la librería NiceGUI)</li>
 </ul>
