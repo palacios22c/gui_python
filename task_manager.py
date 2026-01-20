@@ -1,7 +1,4 @@
-﻿# task_manager.py
-# -*- coding: utf-8 -*-
-
-'''
+﻿'''
 Task manager using NiceGUI
 
 Users can add tasks with priorities and optional notes.
@@ -11,7 +8,7 @@ A light/dark mode toggle and a live counter enhance usability.
 '''
 
 # Module
-from nicegui import ui
+from nicegui import ui, app
 
 # Tasks as dict
 
@@ -174,8 +171,13 @@ def toggle_dark_mode(enabled: bool) -> None:
     """Enable or disable dark mode"""
     ui.dark_mode().enable() if enabled else ui.dark_mode().disable()
 
-# UI layout
+# Exit APP
+def exit_app() -> None:
+    """Shut down the NiceGUI application."""
+    ui.notify('Closing application...')
+    app.shutdown()
 
+# UI layout
 with ui.row().classes('items-center justify-between w-full'):
     title = ui.label('Task List (0 pending)').classes('text-2xl font-bold')
 
@@ -183,6 +185,11 @@ with ui.row().classes('items-center justify-between w-full'):
         'Dark mode',
         on_change=lambda e: toggle_dark_mode(e.value)
     ).classes('text-lg ml-auto')
+
+    ui.button(
+        'Exit',
+        on_click=exit_app
+    ).classes('bg-red-600 text-white px-4 py-2 rounded')
 
 with ui.row().classes('gap-4 mt-4'):
     task_input = ui.input('New task').classes('w-64')
