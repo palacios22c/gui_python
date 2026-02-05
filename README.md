@@ -13,8 +13,9 @@
 <li>memory_tk.py: Color memory game, like memory.py. (Using Tkinter module)</li>
 <li>prices.py: A panel to show prices for three items and calculate a total price. (Using pyFLTK library)</li>
 <li>figures.py: A simple canvas test. (Using Tkinter module)</li>
-<li>figures_wx.py: A canvas test using wxPython. (Using wxPython module)</li>
 <li>figures_pygame.py: Another canvas test but using pygame. (Using pygame module)</li>
+<li>figures_pyqt6.py: A drawing canvas for user‑selected shapes. (Using PyQT6 module)</li>
+<li>figures_wx.py: A canvas test using wxPython. (Using wxPython module)</li>
 <li>converter.py: A basic converter between measurements (length, mass, time, temperature). (Using PySide6 module)</li>
 <li>converter_wx.py: A basic converter, similar to converter.py. Including area measurements. (Using wxPython module)</li>
 <li>task_manager.py: A web-based task manager for creating, editing and organizing tasks. (Using NiceGUI library)</li>
@@ -36,8 +37,9 @@
 <li>memory_tk.py: Juego de memoria con colores, similar a memory.py. (Usando el módulo Tkinter)</li>
 <li>prices.py: Panel básico que permite saber el precio para tres artículos y calcular el precio total. (Creado usando la librería pyFLTK)</li>
 <li>figures.py: Una prueba simple del canvas. (Usando módulo Tkinter)</li>
-<li>figures_wx.py: Una prueba del canvas con wxPython. (Usando módulo wxPython)</li>
 <li>figures_pygame.py: Otro canvas pero usando pygame. (Se usa el módulo pygame)</li>
+<li>figures_pyqt6.py: Un canvas donde el usuario puede dibujar las figuras que seleccione. (Se usa el módulo PyQT6)</li>
+<li>figures_wx.py: Una prueba del canvas con wxPython. (Usando módulo wxPython)</li>
 <li>converter.py: Un conversor básico entre medidas (distancia, masa, tiempo, temperatura). (Se usa el módulo PySide6)</li>
 <li>converter_wx.py: Conversor básico similar a converter.py. Se incluye el área. (Se usa el módulo wxPython)</li>
 <li>task_manager.py: Gestor de tareas web que permite crear, editar y organizar tareas. (Se usa la librería NiceGUI)</li>
