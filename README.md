@@ -9,6 +9,7 @@
 <li>options.py: A basic panel to check price of foods and drinks. (Using PyQt4 module)</li>
 <li>options2.py: Same panel as options.py but using PyQT5. (Using PyQt5 module)</li>
 <li>memory.py: Color memory game. (Using PyQt6 module)</li>
+<li>memory_arcade.py: Number sequence memory game. (Using arcade library)</li>
 <li>memory_pairs.py: A simple emoji-based memory game. (Using pyglet library)</li>
 <li>memory_tk.py: Color memory game, like memory.py. (Using Tkinter module)</li>
 <li>prices.py: A panel to show prices for three items and calculate a total price. (Using pyFLTK library)</li>
@@ -33,6 +34,7 @@
 <li>options.py: Un panel de control básico para comprobar los precios. (Creado usando PyQt4)</li>
 <li>options2.py: El mismo panel que options.py pero con PyQT5. (Usado el módulo PyQt5)</li>
 <li>memory.py: Juego de memoria con colores. (Usando el módulo PyQt6)</li>
+<li>memory_arcade.py: Juego de memoria secuencial con números. (Usando librería arcade)</li>
 <li>memory_pairs.py: Un juego simple de memoria con emojis. (Usando la librería pyglet)</li>
 <li>memory_tk.py: Juego de memoria con colores, similar a memory.py. (Usando el módulo Tkinter)</li>
 <li>prices.py: Panel básico que permite saber el precio para tres artículos y calcular el precio total. (Creado usando la librería pyFLTK)</li>
